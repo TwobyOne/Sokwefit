@@ -5,13 +5,13 @@
 
     <div class="about-info">
         <div class="image" data-aos="fade-right">
-            <img src="./images/smoothies/smoothie10.jpg" alt="">
+            <img src="images/about.png" alt="">
         </div>
 
         <div class="content" data-aos="fade-left">
-            <h3>best tasty juices in the country</h3>
-            <p>Our team is on a mission to create create tasting and nutritious juices, smoothies, bowls and bites. Our menu is full of fresh offers that are eqully craveable and  guilt-free. We take a lot of pride in serving products that are hight in nutritional value.</p>
-            <p>Our juices are made fresh to order, and our smoothies are made with fruites instead of ice - which is commonly used bu other companies.</p>
+        <h3>Empowering Fitness and Wellness</h3>
+        <p>At Sokwefitness, led by our visionary CEO Abuu JR, we are committed to helping you achieve your fitness and wellness goals. Our mission is to create an environment that inspires and supports a healthy lifestyle for everyone.</p>
+        <p>From state-of-the-art gym facilities to premium products like gym bags, pullovers, and accessories, we prioritize quality and functionality. We’re proud to offer solutions that enhance your workout experience and keep you motivated every step of the way.</p>
             <div class="icons-container">
                 <div class="icons">
                     <i class="fas fa-shipping-fast"></i>

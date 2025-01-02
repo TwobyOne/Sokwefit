@@ -6,39 +6,39 @@
 
             <div class="swiper-slide slide">
                 <div class="content" >
-                    <span>our special smoothie</span>
-                    <h3>Dragon Fruit</h3>
-                    <p>The best smoothie that will change your whole morning routine!</p>
-                    <a href="#menu" class="btn">order now</a>
+                <span>Your perfect companion</span>
+                      <h3>Gym Mugs</h3>
+                      <p>Start your day with our stylish and durable gym mugs, perfect for your protein shakes or morning coffee!</p>
+                    <a href="#menu" class="btn">Shop now</a>
                 </div>
                 <div class="image" >
-                    <img src="images/bg9.png" alt="">
+                    <img src="images/mugs.png" alt="">
                 </div>
             </div>
 
          
             <div class="swiper-slide slide">
-                <div class="content">
-                    <span>our big secret</span>
-                    <h3>Fresh Fruits</h3>
-                    <p>the secret behind these delicious juices is that we use fresh fruits 100% organic with no chemicals!</p>
-                    <a href="#menu" class="btn">order now</a>
-                </div>
+            <div class="content">
+                 <span>Exclusive collection</span>
+                 <h3>Gym Pullovers</h3>
+                 <p>Stay comfortable and stylish during your workouts with our premium gym pullovers, crafted for performance and durability!</p>
+                 <a href="#menu" class="btn">shop now</a>
+            </div>
                 
                 <div class="image">
-                    <img src="images/bg8.png" alt="">
+                    <img src="images/pullover.png" alt="">
                 </div>
             </div>
 
             <div class="swiper-slide slide">
                 <div class="content">
-                    <span>Our goal is to make our customers happy</span>
-                    <h3>Extra Toppings</h3>
-                    <p>You can add whatever toppings you want!</p>
-                    <a href="#menu" class="btn">order now</a>
+                <span>Carry your essentials in style</span>
+                    <h3>Durable Gym Bags</h3>
+                    <p>Explore our range of high-quality gym bags designed to keep your gear organized and ready for every workout!</p>
+                    <a href="#menu" class="btn">Shop now</a>
                 </div>
                 <div class="image">
-                    <img src="images/bg3.png" alt="">
+                    <img src="images/bags.png" alt="">
                 </div>
             </div>
         </div>
