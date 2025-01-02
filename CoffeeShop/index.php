@@ -11,6 +11,7 @@
     <!-- swiper css file -->
     <link rel="stylesheet" href="./plugins/swiper-8.0.7/css/swiper.min.css">
 
+
     <!-- font awesome css cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
@@ -19,6 +20,8 @@
 
     <!-- aos css file -->
     <link rel="stylesheet" href="./plugins/aos-2.3.4/css/aos.css">
+
+
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./css/style.css">
