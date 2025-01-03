@@ -37,6 +37,6 @@
 
     </div>
 
-    <div class="credit"> copyright @ 2022 by <span>Sokwefitness.</span> </div>
+    <div class="credit"> copyright @ 2025 by <span>Sokwefitness.</span> </div>
 
 </section>

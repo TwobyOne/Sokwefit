@@ -126,6 +126,15 @@ header {
   }
 
   @media (max-width: 768px) {
+
+    header .logo {
+      
+      font-size: 1.5rem;
+      font-weight: normal;
+      cursor:pointer;
+    }
+
+
     header .icons #menu-bars {
       display: inline-block;
     }
@@ -163,3 +172,4 @@ header {
       margin: 0 1rem;
     }
   }
+
