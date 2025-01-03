@@ -4,11 +4,11 @@
 
         <div class="box">
             <h3>locations</h3>
-            <a href="#">Lebanon</a>
-            <a href="#">Italy</a>
-            <a href="#">Russia</a>
-            <a href="#">USA</a>
-            <a href="#">France</a>
+            <a href="#">Masaki</a>
+            <a href="#">Msasani</a>
+            <a href="#">Mikocheni</a>
+            <a href="#">Magomeni</a>
+            <a href="#">Zanzibar</a>
         </div>
 
         <div class="box">
@@ -23,9 +23,9 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#">+123-456-7890</a>
-            <a href="#">+111-222-3333</a>
-            <a href="#">lynn.aouad@st.ul.edu.lb</a>
+            <a href="#">+255 743 536 373</a>
+            <a href="#">+255 656 722 784</a>
+            <a href="#">sokwefitness@gmail.com</a>
         </div>
 
         <div class="box">
@@ -37,6 +37,6 @@
 
     </div>
 
-    <div class="credit"> copyright @ 2022 by <span>Lynn Aouad</span> </div>
+    <div class="credit"> copyright @ 2022 by <span>Sokwefitness.</span> </div>
 
 </section>

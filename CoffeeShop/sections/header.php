@@ -7,7 +7,7 @@
     #################################################################################################-->
 
 <header>
-   <a href="#" class="logo"><i class="fas fa-utensils"></i>Coffee Shop.</a>
+   <a href="#" class="logo"><i class="fas fa-utensils"></i>SOKWEFITNESS</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
