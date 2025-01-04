@@ -2,7 +2,7 @@
     <div class="category">
             <?php for($i=1; $i<7; $i++){ ?>
                     <a href="#" class="cat">
-                        <img src="images/random/o<?php echo $i ?>.jpg" alt="">
+                        <img src="images/random/b<?php echo $i ?>.jpg" alt="">
                     </a>
             <?php } ?>
     </div>  
@@ -37,7 +37,7 @@
             ?>
 
             <div class="grid" data-aos="fade-up">
-                <img src="images/milkshakes/milkshake7.jpg" alt="">
+                <img src="images/Pullover/pullover.png" alt="">
                 <div class="content">
                     <span>special offers</span>
                     <h3>upto <?php echo $row['max']; ?>% off</h3>
@@ -58,7 +58,7 @@
             ?>
             
             <div class="grid" data-aos="fade-up">
-                <img src="images/random/o3.jpg" alt="">
+                <img src="images/Mugs/mugs.png" alt="">
                 <div class="content">
                     <span>today's offers</span>
                     <h3>hurry up</h3>

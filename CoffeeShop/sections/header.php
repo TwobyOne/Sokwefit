@@ -7,14 +7,13 @@
     #################################################################################################-->
 
 <header>
-   <a href="#" class="logo"><i class="fas fa-utensils"></i>SOKWEFITNESS</a>
+   <a href="#" class="logo"><i class="fas fa-utensils"></i>Sokwefitness</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
         <a href="#offers">offers</a>
         <a href="#about">about</a>
         <a href="#menu">menu</a>
-        <a href="#extra">toppings</a>
         <a href="#review">reviews</a>
     </nav>
 

@@ -25,47 +25,7 @@
                     </div>
 
 
-                    <div>
-                        <h3 id="TOPPINGS">Choose your Toppings (optional):</h3>
 
-                        <?php
-
-                        // fetch from database the toppings categories
-                        $query="SELECT * FROM toppingscategory";
-                        $result=mysqli_query($connection,$query);
-
-                        while($row=mysqli_fetch_assoc($result)){    ?>
-
-
-                        <div class="ToppingsBox">
-                            <h3><?php echo $row["topping_category_name"] ?></h3>
-                            
-                            <div class="ToppingsChoices">
-                                <?php
-
-                                // fetch all items in this category
-                                $query2="SELECT topping_name,topping_image,topping_price FROM toppings WHERE topping_category_id=?";
-                                $stmt2=mysqli_prepare($connection,$query2);
-                                mysqli_stmt_bind_param($stmt2,"i",$row['topping_category_id']);
-                                mysqli_stmt_execute($stmt2);
-                                $result2=mysqli_stmt_get_result($stmt2);
-                                
-                                while($row2 = mysqli_fetch_assoc($result2)){    ?>
-                        
-                                    <div class="topping_item">
-                                        <!-- checkboxes -->
-                                        <label class="container2">
-                                            <input type="checkbox" class="checkitem" value="<?php echo $row2['topping_name'] ?>">
-                                            <div class="checkmark"></div>        
-                                        </label> 
-                                        <?php echo $row2['topping_name'] ?>
-                                    </div>
-                        
-                                <?php } ?>
-                            </div>   
-                        </div>
-                        <?php } ?>
-                    </div>   
                 </div>
 
 	        	<div class="modal-footer">

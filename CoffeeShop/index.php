@@ -85,7 +85,7 @@
 
 
 <!-- extras section  -->
-<?php include('./sections/extras.php'); ?> 
+
 
 
 <!-- review section  -->
