@@ -5,9 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/log.svg" type="image/x-icon">
+    <link rel="icon" href="images/log.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
-    <title></title>
+    <title>Sokwefitness</title>
 
     <!-- swiper css file -->
     <link rel="stylesheet" href="./plugins/swiper-8.0.7/css/swiper.min.css">
