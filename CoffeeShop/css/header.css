@@ -4,17 +4,17 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: #fff;
+    background: #000;
     padding: 1rem 7%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
     z-index: 1000;
     box-shadow: var(--box-shadow);
   }
   
   header .logo {
-    color: var(--black);
+    color: var(--light-color);
     font-size: 2.5rem;
     font-weight: bolder;
     cursor:pointer;
@@ -33,7 +33,7 @@ header {
   
   header .navbar a.active,
   header .navbar a:hover {
-    color: #fff;
+    color: #000;
     background: var(--orange);
   }
 
@@ -59,7 +59,7 @@ header {
   
   header .icons i:hover,
   header .icons a:hover {
-    color: #fff;
+    color: #000;
     background: var(--orange);
     transform: rotate(360deg);
   }
@@ -90,9 +90,9 @@ header {
   
   #search-form #search-box {
     width: 50rem;
-    border-bottom: 0.1rem solid #fff;
+    border-bottom: 0.1rem solid #000;
     padding: 1rem 0;
-    color: #fff;
+    color: #000;
     font-size: 3rem;
     text-transform: none;
     background: none;
@@ -107,7 +107,7 @@ header {
   }
   
   #search-form label {
-    color: #fff;
+    color: #000;
     cursor: pointer;
     font-size: 3rem;
   }
@@ -118,7 +118,7 @@ header {
   
   #search-form #close {
     position: absolute;
-    color: #fff;
+    color: #000;
     cursor: pointer;
     top: 2rem;
     right: 3rem;
@@ -144,7 +144,7 @@ header {
       top: 100%;
       left: 0;
       right: 0;
-      background: #fff;
+      background: #000;
       border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
       border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
       padding: 1rem;

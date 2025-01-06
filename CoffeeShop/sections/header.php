@@ -7,7 +7,7 @@
     #################################################################################################-->
 
 <header>
-   <a href="#" class="logo"><i class="fas fa-utensils"></i>Sokwefitness</a>
+   <a href="#" class="logo">Sokwefitness</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>

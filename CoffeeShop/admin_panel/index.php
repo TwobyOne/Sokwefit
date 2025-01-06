@@ -58,8 +58,9 @@ if (isset($_POST['submit'])) {
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="images/log.svg" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
-<title>Shop Management System</title>
+<title>SokweFitness | Admin-Login</title>
 <link rel="stylesheet" type="text/css" href="css/login.css">
 
 </head>
@@ -68,7 +69,7 @@ if (isset($_POST['submit'])) {
 <div class="content">
 
 	<div class="header">
-		<h1>Shop Management System</h1>
+		<h1>Welcome to SokweFitness Admin Dashboard!</h1>
 	</div>
 
 	<div class="main">
