@@ -119,6 +119,7 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
+  color: #000;
 }
 
 .footer .box-container .box h3 {

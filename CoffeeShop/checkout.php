@@ -33,7 +33,7 @@
     <?php include_once('./includes/db_connect.php'); ?>   
 
     <header>
-        <a href="./index.php" class="logo"><i class="fas fa-utensils"></i>Coffee Shop.</a>
+        <a href="./index.php" class="logo"></i>Sokwefitness.</a>
 
         <div class="icons"> 
            <a href="./wishlist.php" class="fas fa-heart"></a>

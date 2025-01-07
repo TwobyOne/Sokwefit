@@ -44,7 +44,7 @@
    <input type="hidden" id="currency_list" value="<?php echo $currency_logo; ?>" >
 
     <header>
-        <a href="./index.php" class="logo"><i class="fas fa-utensils"></i>Coffee Shop.</a>
+        <a href="./index.php" class="logo">Sokwefitness.</a>
 
         <div class="icons">
             <a href="./wishlist.php" class="fas fa-heart"></a>
