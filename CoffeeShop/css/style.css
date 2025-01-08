@@ -28,12 +28,12 @@
   --light-pink: #ffb3e4;
   --brown: #564519;
   --pink: #ff7497;
-  --light-color: #666;
+  --light-color: #fff;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family:"Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -119,6 +119,7 @@ section:nth-child(even) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
+  color: #000;
 }
 
 .footer .box-container .box h3 {
@@ -131,7 +132,7 @@ section:nth-child(even) {
   display: block;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  color: var(--light-color);
+  color: var(--black);
 }
 
 .footer .box-container .box a:hover {
@@ -150,7 +151,7 @@ section:nth-child(even) {
 }
 
 .footer .credit span {
-  color: var(--green);
+  color: var(--black);
 }
 
 /************************ Loading *************************/

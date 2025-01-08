@@ -31,7 +31,7 @@
   }
   
   .about .about-info .content p {
-    color: var(--light-color);
+    color: var(--black);
     font-size: 1.5rem;
     padding: 0.5rem 0;
     line-height: 2;
