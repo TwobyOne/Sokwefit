@@ -159,7 +159,7 @@ header {
   
     header .navbar a {
       width:90%;
-      text-align: center;
+      text-align: center; 
       display: block;
       padding: 1rem;
       margin-bottom: .5em;
