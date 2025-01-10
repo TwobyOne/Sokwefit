@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
 	switch ($position) {
 		case 'Admin':
-			$query = "SELECT admin_id, admin_username,admin_image FROM administrator WHERE admin_username=? AND admin_password=?";
+			$query = "SELECT admin_id, admin_username,admin_image FROM admin WHERE admin_username=? AND admin_password=?";
             $stmt = mysqli_prepare($connection,$query);
             mysqli_stmt_bind_param($stmt,"ss",$username,$password);
             mysqli_stmt_execute($stmt);

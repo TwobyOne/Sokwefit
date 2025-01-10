@@ -47,7 +47,7 @@
                 </li>
 
                 <li class="">
-                    <a href="manager_menuItems.php"><i class="material-icons">coffee</i><span>Menu Items</span></a>
+                    <a href="manager_menuItems.php"><i class="material-icons">category</i><span>Menu Items</span></a>
                 </li>
 
                 <li class="">

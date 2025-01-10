@@ -228,8 +228,15 @@ if(isset($_POST["update_cinfo"])) {
 
                 <?php
 
-                    $result = mysqli_query($connection,"SELECT delivery_cost FROM delivery");
-                    $row = mysqli_fetch_assoc($result);
+                    // Check if the delivery table exists before querying
+                    $result = mysqli_query($connection, "SHOW TABLES LIKE 'delivery'");
+                    if (mysqli_num_rows($result) > 0) {
+                        $result = mysqli_query($connection, "SELECT delivery_cost FROM delivery");
+                        $row = mysqli_fetch_assoc($result);
+                    } else {
+                        // Handle the case where the table does not exist
+                        $row = ['delivery_cost' => 0]; // Default value or handle error
+                    }
 
                 ?>
 
