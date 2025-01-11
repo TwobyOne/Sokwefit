@@ -85,7 +85,7 @@ if(isset($_POST["update_info"])) {
 
 
 	if($_FILES['new_image']['size'] > 0){
-		$filename=$_FILES['new_image']['name'];
+		$filename=$_FILES['new_image']['name'];   
 
 		$location="../../images/managers/".$filename;
 

@@ -73,7 +73,7 @@ if(isset($_GET["section"])){
     }
 } ?>
  
-        <div class="box-container" >
+        <div class="box-container" > 
 
     <?php
 
