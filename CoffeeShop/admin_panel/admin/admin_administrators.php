@@ -169,7 +169,7 @@ if(isset($_POST["update_info"])) {
 												<tbody>
 				
 													<?php
-														$result = mysqli_query($connection,"SELECT * FROM administrator"); 
+														$result = mysqli_query($connection,"SELECT * FROM admin"); 
 														while ($row = mysqli_fetch_assoc($result)) { ?>
 
 															<tr>

@@ -50,13 +50,7 @@
                     <a href="manager_menuItems.php"><i class="material-icons">category</i><span>Menu Items</span></a>
                 </li>
 
-                <li class="">
-                    <a href="manager_toppingsCategory.php"><i class="material-icons">menu</i><span>Toppings Categories</span></a>
-                </li>
-
-                <li class="">
-                    <a href="manager_toppings.php"><i class="material-icons">widgets</i><span>Toppings Items</span></a>
-                </li>
+              
 
                  <li class="">
                     <a href="manager_addOffers.php"><i class="material-icons">menu</i><span>Offers</span></a>
