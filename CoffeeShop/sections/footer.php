@@ -11,15 +11,7 @@
             <a href="#">Zanzibar</a>
         </div>
 
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="#home">Home</a>
-            <a href="#offers">Offers</a>
-            <a href="#about">About</a>
-            <a href="#menu">Menu</a>
-            <a href="#extra">Toppings</a>
-            <a href="#review">Reviews</a>
-        </div>
+      
 
         <div class="box">
             <h3>contact info</h3>

@@ -41,6 +41,12 @@ header {
     font-size: 1.5rem;
     cursor:pointer;
     text-align: center;
+    margin-left: 0.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    
   }
   
   header .icons i,
