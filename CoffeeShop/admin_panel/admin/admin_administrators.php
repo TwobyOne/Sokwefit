@@ -59,7 +59,7 @@ if(isset($_POST["submit"])) {
 	}
 
 
-	$query = "INSERT INTO administrator(`admin_name`, `admin_phone`,`admin_email`, `admin_image`,`admin_username`, `admin_password`) 
+	$query = "INSERT INTO admin(`admin_name`, `admin_phone`,`admin_email`, `admin_image`,`admin_username`, `admin_password`) 
               VALUES ('$admin_name','$admin_phone','$admin_email','$filename','$admin_username','$admin_password')";
 
 	mysqli_query($connection,$query);

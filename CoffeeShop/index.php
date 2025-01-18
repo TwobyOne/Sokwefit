@@ -73,7 +73,7 @@
 
 
 <!-- about section  -->
-<?php include('./sections/about.php'); ?> 
+
 
 
 <!-- menu section  -->
