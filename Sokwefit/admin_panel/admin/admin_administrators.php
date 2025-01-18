@@ -96,7 +96,7 @@ if(isset($_POST["update_info"])) {
 		mysqli_query($connection,$query);
 	}
 
-	$query = "UPDATE administrator set admin_name='".$new_name."', 
+	$query = "UPDATE admin set admin_name='".$new_name."', 
 									 admin_phone='".$new_phone."', 
 									 admin_email='".$new_email."',
 									 admin_username='".$new_username."',  
