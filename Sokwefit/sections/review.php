@@ -79,7 +79,18 @@
 
     <div class="swiper-container review-slider">
             <div class="swiper-wrapper" id="reviews_swiper">
+                <?php
+                // Fetch approved reviews from the database
+                $query = "SELECT * FROM review_table WHERE approved = 1;"; // Only fetch approved reviews
+                $result = mysqli_query($connection, $query);
 
+                while ($row = mysqli_fetch_assoc($result)) {
+                    echo "<div class='swiper-slide'>";
+                    echo "<p>" . htmlspecialchars($row['user_review']) . "</p>"; // Ensure this matches your column name
+                    echo "<h5>" . htmlspecialchars($row['user_name']) . "</h5>"; // Ensure this matches your column name
+                    echo "</div>";
+                }
+                ?>
             </div>
 
     </div>

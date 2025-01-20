@@ -43,6 +43,11 @@ if (!isset($_SESSION['admin_id'])) {
 
 include_once('../../includes/db_connect.php');
 
+if (isset($_POST['approve_review'])) {
+    $review_id = $_POST['review_id'];
+    $query = "UPDATE review_table SET approved = 1 WHERE id = '$review_id'";
+    mysqli_query($connection, $query);
+}
 
 ?>
 

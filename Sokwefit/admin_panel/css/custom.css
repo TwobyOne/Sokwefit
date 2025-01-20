@@ -951,5 +951,34 @@ footer .copyright {
     MEDIAQUERIES
 ----------------------------------------------------- */
 
+.approve-btn {
+    background-color: #28a745; /* Green background for approve */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+    margin-right: 5px; /* Space between buttons */
+}
+
+.approve-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.unapprove-btn {
+    background-color: #dc3545; /* Red background for unapprove */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.unapprove-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
 
 

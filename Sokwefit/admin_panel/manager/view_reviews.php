@@ -188,6 +188,24 @@ include_once('../../includes/db_connect.php');
 
                 </div>
 
+                <!-- <h4>Unapproved Reviews</h4>
+                <hr />
+                <div class="unapproved-reviews">
+                    <?php
+                        // Fetch unapproved reviews from the database
+                        $query = "SELECT * FROM review_table WHERE approved = 0;";
+                        $result = mysqli_query($connection, $query);
+
+                        while($row = mysqli_fetch_assoc($result)) {
+                            echo "<div class='review'>";
+                            echo "<p>" . htmlspecialchars($row['user_review']) . "</p>";
+                            echo "<button class='approve-btn' data-id='" . $row['review_id'] . "'>Approve</button>";
+                            echo "<button class='unapprove-btn' data-id='" . $row['review_id'] . "'>Unapprove</button>";
+                            echo "</div>";
+                        }
+                    ?>
+                </div> -->
+
                 
 
 
@@ -316,6 +334,42 @@ include_once('../../includes/db_connect.php');
 
 <script src="../js/script.js" type="text/javascript"></script>
 <script src="../js/charts.js" type="text/javascript"></script>
+<!-- 
+<script>
+    $(document).on('click', '.approve-btn', function() {
+        var reviewId = $(this).data('id');
+        $.ajax({
+            url: 'approve_review.php', // Create this file to handle approval
+            type: 'POST',
+            data: { id: reviewId, action: 'approve' },
+            success: function(response) {
+                if (response.success) {
+                    alert('Review approved successfully!');
+                    location.reload(); // Reload the page to see changes
+                } else {
+                    alert('Error approving review.');
+                }
+            }
+        });
+    });
+
+    $(document).on('click', '.unapprove-btn', function() {
+        var reviewId = $(this).data('id');
+        $.ajax({
+            url: 'approve_review.php', // Use the same file to handle unapproval
+            type: 'POST',
+            data: { id: reviewId, action: 'unapprove' },
+            success: function(response) {
+                if (response.success) {
+                    alert('Review unapproved successfully!');
+                    location.reload(); // Reload the page to see changes
+                } else {
+                    alert('Error unapproving review.');
+                }
+            }
+        });
+    });
+</script> -->
   
 
 </body>
