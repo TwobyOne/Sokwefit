@@ -11,6 +11,7 @@
  <head>
  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/log.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1">
     <title>Checkout</title>
 
@@ -175,7 +176,7 @@
                         <?php  }  ?>
 
                         <tr>  
-                            <td colspan="2" align="right"><i class="fas fa-shipping-fast"></i> <b>Shipping</b></td>  
+                            <td colspan="2" align="right"><i class="fas fa-shipping-fast"></i> <b>Fast Delivery</b></td>  
                             <td align="right"><b><?php echo $_SESSION['currency']['logo']." ".(isset($_SESSION['shipping']) ? $_SESSION['shipping'] : '0.00') ?></b></td>
                         </tr>
 

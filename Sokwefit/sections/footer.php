@@ -3,12 +3,12 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>locations</h3>
-            <a href="#">Masaki</a>
-            <a href="#">Msasani</a>
-            <a href="#">Mikocheni</a>
-            <a href="#">Magomeni</a>
-            <a href="#">Zanzibar</a>
+            <h3>Our Products</h3>
+            <a href="#">Dumb Bell</a>
+            <a href="#">Pullover</a>
+            <a href="#">T-shirts</a>
+            <a href="#">Mugs</a>
+            <a href="#">Bags</a>
         </div>
 
       
@@ -17,7 +17,7 @@
             <h3>contact info</h3>
             <a href="#">+255 743 536 373</a>
             <a href="#">+255 656 722 784</a>
-            <a href="#">sokwefitness@gmail.com</a>
+            <a href="#">info@sokwefit.com</a>
         </div>
 
         <div class="box">
