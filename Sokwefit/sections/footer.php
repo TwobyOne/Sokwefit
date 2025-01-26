@@ -4,11 +4,11 @@
 
         <div class="box">
             <h3>Our Products</h3>
-            <a href="#">Pullovers</a>
-            <a href="#">Bugs</a>
-            <a href="#">Mugs</a>
-            <a href="#">T-shirts</a>
             <a href="#">Dumb Bell</a>
+            <a href="#">Pullover</a>
+            <a href="#">T-shirts</a>
+            <a href="#">Mugs</a>
+            <a href="#">Bags</a>
         </div>
 
       
