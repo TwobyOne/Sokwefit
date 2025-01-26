@@ -6,6 +6,14 @@
 
     #################################################################################################-->
 
+<style>
+    .logo {
+        font-family: "Tempus Sans ITC",'Lucida Handwriting','Gabriola', serif;
+        font-size: 24px; /* Adjust size as needed */
+        color: #333; /* Change color as needed */
+    }
+</style>
+
 <header>
    <a href="#" class="logo">
     <img src="images/log.svg" alt="logo">

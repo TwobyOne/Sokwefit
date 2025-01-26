@@ -30,25 +30,8 @@
         </div>
     </div>
 
-    <h3 class="sub-heading" data-aos="fade-up"> Customers </h3>
-    <h1 class="heading" data-aos="fade-up"> Happy Customers! </h1>
 
-    <div class="row" id="gallery" data-aos="fade-up">
-        <div class="col-lg-10 m-auto">
-            <div class="customer-table-img-slider swiper-container" id="icon">
-                <div class="swiper-wrapper">
-                    <?php for($i=1; $i<8;$i++){ ?>
-                        <div class="swiper-slide">
-                            <img src="./images/customers/c<?php echo $i ?>.jpg" 
-                                 data-fancybox="table-slider"
-                                 class="customer-table-img">
-                        </div>
-                    <?php } ?>       
-                </div>
                 
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -101,27 +84,4 @@
 
 </section>
 
-<script>
-new Swiper('.customer-table-img-slider', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  }
-});
-</script>
+
