@@ -79,23 +79,12 @@
 
     <div class="swiper-container review-slider">
             <div class="swiper-wrapper" id="reviews_swiper">
-                <?php
-                // Fetch approved reviews from the database
-                $query = "SELECT * FROM review_table WHERE approved = 1;"; // Only fetch approved reviews
-                $result = mysqli_query($connection, $query);
-
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<div class='swiper-slide'>";
-                    echo "<p>" . htmlspecialchars($row['user_review']) . "</p>"; // Ensure this matches your column name
-                    echo "<h5>" . htmlspecialchars($row['user_name']) . "</h5>"; // Ensure this matches your column name
-                    echo "</div>";
-                }
-                ?>
+            
             </div>
 
     </div>
 
-
+        
 
 </section>
 
@@ -129,6 +118,87 @@
     	</div>
   	</div>
 </div>
+
+<script>
+$(document).ready(function() {
+    load_rating_data();
+
+    function load_rating_data() {
+        $.ajax({
+            url: "submit_rating.php",
+            method: "POST",
+            data: { action: 'load_data' },
+            dataType: "JSON",
+            success: function(data) {
+                // Update the average rating and total reviews
+                $('#average_rating').text(data.average_rating);
+                $('#total_review').text(data.total_reviews);
+
+                // Update the star counts
+                $('#total_five_star_review').text(data.five_star_review);
+                $('#total_four_star_review').text(data.four_star_review);
+                $('#total_three_star_review').text(data.three_star_review);
+                $('#total_two_star_review').text(data.two_star_review);
+                $('#total_one_star_review').text(data.one_star_review);
+
+                // Update progress bars
+                $('#five_star_progress').css('width', (data.five_star_review/data.total_reviews * 100) + '%');
+                $('#four_star_progress').css('width', (data.four_star_review/data.total_reviews * 100) + '%');
+                $('#three_star_progress').css('width', (data.three_star_review/data.total_reviews * 100) + '%');
+                $('#two_star_progress').css('width', (data.two_star_review/data.total_reviews * 100) + '%');
+                $('#one_star_progress').css('width', (data.one_star_review/data.total_reviews * 100) + '%');
+
+                // Clear existing reviews
+                $('#reviews_swiper').empty();
+
+                // Add the reviews to the swiper
+                if(data.review_data.length > 0) {
+                    data.review_data.forEach(function(review) {
+                        var stars = '';
+                        for(var i = 1; i <= 5; i++) {
+                            var starClass = i <= review.user_rating ? 'text-warning' : 'star-light';
+                            stars += '<i class="fas fa-star ' + starClass + ' mr-1"></i>';
+                        }
+
+                        var reviewHtml = `
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <div class="stars">
+                                        ${stars}
+                                    </div>
+                                    <p>${review.user_review}</p>
+                                    <h3>${review.user_name}</h3>
+                                    <span>${review.datetime}</span>
+                                </div>
+                            </div>
+                        `;
+                        $('#reviews_swiper').append(reviewHtml);
+                    });
+                }
+
+                // Initialize or update Swiper
+                if(typeof reviewSwiper !== 'undefined') {
+                    reviewSwiper.update();
+                } else {
+                    reviewSwiper = new Swiper('.review-slider', {
+                        spaceBetween: 20,
+                        loop: true,
+                        autoplay: {
+                            delay: 2500,
+                            disableOnInteraction: false,
+                        },
+                        breakpoints: {
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        },
+                    });
+                }
+            }
+        });
+    }
+});
+</script>
 
 
 

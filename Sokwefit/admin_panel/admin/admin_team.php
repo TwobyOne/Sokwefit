@@ -216,37 +216,45 @@ if(isset($_POST["update_info"])) {
 	##################################################################################### -->						
 						
 						<div id="content_2" class="content">
-						
-							<form  action="" method="post" enctype="multipart/form-data">
-								<table width="220" height="106" border="0">
-									<tr>
-										<td align="center"><input name="image" type="file" style="width:100%"  required="required" id="uploadFile" accept=".jpg, .jpeg, .png" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="name" type="text" style="width:100%" placeholder="Member Name" required="required" id="add_member_name" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="role" type="text" style="width:100%" placeholder="Role" required="required" id="add_member_role" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="phone" type="text" style="width:100%" placeholder="Phone Number" required="required" id="add_member_phone" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="email" type="email" style="width:100%" placeholder="Email" required="required" id="add_member_email" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="salary" type="text" style="width:100%" placeholder="Salary" required="required" id="add_member_salary" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="username" type="text" style="width:100%" placeholder="Username" required="required" id="add_member_username" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="password" type="text" style="width:100%" placeholder="Password" required="required" id="add_member_password" /></td>
-									</tr>
-									<tr>
-										<td align="right"><input type="submit" value="add" name="submit" class="add_member" /></td>
-									</tr>
-								</table>
+							<form action="" method="post" enctype="multipart/form-data" class="modern-form">
+								<div class="form-group">
+									<div class="file-upload">
+										<input name="image" type="file" required="required" id="uploadFile" accept=".jpg, .jpeg, .png" />
+										<label for="uploadFile">Choose Image</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input name="name" type="text" placeholder="Member Name" required="required" id="add_member_name" />
+								</div>
+
+								<div class="form-group">
+									<input name="role" type="text" placeholder="Role" required="required" id="add_member_role" />
+								</div>
+
+								<div class="form-group">
+									<input name="phone" type="text" placeholder="Phone Number" required="required" id="add_member_phone" />
+								</div>
+
+								<div class="form-group">
+									<input name="email" type="email" placeholder="Email" required="required" id="add_member_email" />
+								</div>
+
+								<div class="form-group">
+									<input name="salary" type="text" placeholder="Salary" required="required" id="add_member_salary" />
+								</div>
+
+								<div class="form-group">
+									<input name="username" type="text" placeholder="Username" required="required" id="add_member_username" />
+								</div>
+
+								<div class="form-group">
+									<input name="password" type="text" placeholder="Password" required="required" id="add_member_password" />
+								</div>
+
+								<div class="form-group">
+									<button type="submit" name="submit" class="add_member">Add Member</button>
+								</div>
 							</form>
 						</div>
 

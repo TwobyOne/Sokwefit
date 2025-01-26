@@ -1,34 +1,35 @@
 <?php
+session_start();
 include_once('../../includes/db_connect.php');
 
+if (!isset($_SESSION['manager_id'])) {
+    die(json_encode(['success' => false, 'message' => 'Unauthorized']));
+}
+
+header('Content-Type: application/json');
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $reviewId = $_POST['id'];
-    $action = $_POST['action'];
-
-    if ($action === 'approve') {
-        $query = "UPDATE review_table SET approved = 1 WHERE review_id = ?";
-    } elseif ($action === 'unapprove') {
-        $query = "UPDATE review_table SET approved = 0 WHERE review_id = ?";
-    } else {
-        echo json_encode(['success' => false, 'message' => 'Invalid action.']);
-        exit;
+    $review_id = mysqli_real_escape_string($connection, $_POST['id']);
+    $action = mysqli_real_escape_string($connection, $_POST['action']);
+    
+    switch($action) {
+        case 'approve':
+            $query = "UPDATE review_table SET approved = 1 WHERE review_id = '$review_id'";
+            break;
+        case 'unapprove':
+            $query = "UPDATE review_table SET approved = 0 WHERE review_id = '$review_id'";
+            break;
+        case 'delete':
+            $query = "DELETE FROM review_table WHERE review_id = '$review_id'";
+            break;
+        default:
+            die(json_encode(['success' => false, 'message' => 'Invalid action']));
     }
-
-    $stmt = $connection->prepare($query);
-    if ($stmt === false) {
-        echo json_encode(['success' => false, 'message' => 'Prepare failed: ' . $connection->error]);
-        exit;
-    }
-
-    $stmt->bind_param("i", $reviewId);
-    $success = $stmt->execute();
-
-    if ($success) {
+    
+    if (mysqli_query($connection, $query)) {
         echo json_encode(['success' => true]);
     } else {
-        echo json_encode(['success' => false, 'message' => 'Execute failed: ' . $stmt->error]);
+        echo json_encode(['success' => false, 'message' => mysqli_error($connection)]);
     }
-
-    $stmt->close();
 }
 ?>

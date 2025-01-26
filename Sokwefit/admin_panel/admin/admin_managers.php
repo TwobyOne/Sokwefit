@@ -205,31 +205,43 @@ if(isset($_POST["update_info"])) {
 	##################################################################################### -->
 						
 						<div id="content_2" class="content">
-						
-							<form  action="" method="post" enctype="multipart/form-data">
-								<table width="220" height="106" border="0">
-									<tr>
-										<td align="center"><input name="image" type="file" style="width:100%"  required="required" id="uploadFile" accept=".jpg, .jpeg, .png" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="name" type="text" style="width:100%" placeholder="Manager Name" required="required" id="add_manager_name" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="phone" type="text" style="width:100%" placeholder="Phone Number" required="required" id="add_manager_phone" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="email" type="email" style="width:100%" placeholder="Email" required="required" id="add_manager_email" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="username" type="text" style="width:100%" placeholder="Username" required="required" id="add_manager_username" /></td>
-									</tr>
-									<tr>
-										<td align="center"><input name="password" type="text" style="width:100%" placeholder="Password" required="required" id="add_manager_password" /></td>
-									</tr>
-									<tr>
-										<td align="right"><input type="submit" value="add" name="submit" class="add_manager" /></td>
-									</tr>
-								</table>
+							<form action="" method="post" enctype="multipart/form-data" class="modern-form">
+								<div class="form-group">
+									<div class="file-upload">
+										<input name="image" type="file" required="required" id="uploadFile" 
+											accept=".jpg, .jpeg, .png" class="form-control" />
+										<label for="uploadFile">Choose Profile Image</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<input name="name" type="text" class="form-control" 
+										placeholder="Manager Name" required="required" id="add_manager_name" />
+								</div>
+
+								<div class="form-group">
+									<input name="phone" type="text" class="form-control" 
+										placeholder="Phone Number" required="required" id="add_manager_phone" />
+								</div>
+
+								<div class="form-group">
+									<input name="email" type="email" class="form-control" 
+										placeholder="Email" required="required" id="add_manager_email" />
+								</div>
+
+								<div class="form-group">
+									<input name="username" type="text" class="form-control" 
+										placeholder="Username" required="required" id="add_manager_username" />
+								</div>
+
+								<div class="form-group">
+									<input name="password" type="text" class="form-control" 
+										placeholder="Password" required="required" id="add_manager_password" />
+								</div>
+
+								<div class="form-group text-right">
+									<button type="submit" name="submit" class="btn btn-primary add_manager">Add Manager</button>
+								</div>
 							</form>
 						</div>
 

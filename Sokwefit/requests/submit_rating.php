@@ -15,18 +15,31 @@ if (isset($_POST["action"])){
     // Insert reviews data into database
     if ($_POST["action"] == "submit_rating")
     {
-        $username = $_POST["user_name"];
-        $userRating = $_POST["rating_data"];
-        $userReview = $_POST["user_review"];
-        $datetime = date('j')."-".date('n')."-".date('Y');
+        // Validate and sanitize inputs
+        $username = mysqli_real_escape_string($connection, trim($_POST["user_name"]));
+        $userRating = filter_var($_POST["rating_data"], FILTER_VALIDATE_INT, array("options" => array("min_range" => 1, "max_range" => 5)));
+        $userReview = mysqli_real_escape_string($connection, trim($_POST["user_review"]));
+        $datetime = date('Y-m-d'); // Changed to SQL-friendly date format
 
+        // Validate inputs
+        if (empty($username) || empty($userReview) || $userRating === false) {
+            echo "Invalid input data";
+            exit;
+        }
 
-        $query = "INSERT INTO review_table(user_name,user_rating,user_review,datetime) VALUES ('$username', '$userRating', '$userReview', '$datetime')";
-
-        if (mysqli_query($connection, $query))
-            echo "Review submitted successfully!"; //send response to ajax 
-        else
-            echo mysqli_error($connection);
+        $query = "INSERT INTO review_table(user_name, user_rating, user_review, datetime, approved) 
+                 VALUES (?, ?, ?, ?, 0)";  // Set approved to 0 by default
+                 
+        // Use prepared statement
+        $stmt = mysqli_prepare($connection, $query);
+        mysqli_stmt_bind_param($stmt, "siss", $username, $userRating, $userReview, $datetime);
+        
+        if (mysqli_stmt_execute($stmt)) {
+            echo "Review submitted successfully! Waiting for approval.";
+        } else {
+            echo "Error submitting review";
+        }
+        mysqli_stmt_close($stmt);
     }
 
 
@@ -44,12 +57,14 @@ if (isset($_POST["action"])){
         $total_user_rating = 0;
         $review_content = array();
 
-        $query2 = "SELECT * FROM review_table ORDER BY review_id DESC";
+        $query2 = "SELECT * FROM review_table WHERE approved = 1 ORDER BY review_id DESC";
 
         $result = mysqli_query($connection, $query2);
 
-        if (!$result)
-            echo mysqli_error($connection);
+        if (!$result) {
+            echo json_encode(array("error" => "Error loading reviews"));
+            exit;
+        }
 
         while ($row = mysqli_fetch_assoc($result)) {
 

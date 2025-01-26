@@ -2,134 +2,344 @@
    main-content inner design like card start
    ===============================================*/
 
-
-   .card {
-    margin: 10px 0;
-}
-
+/* Card Base Styling */
 .card {
-    border-radius: 0px!important;
-}
-
-.card {
-    display: inline-block;
     position: relative;
-	border:none!important;
-    width: 100%;
-    margin:15px 0;
-    box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
-    border-radius: 6px;
-    color: rgba(0,0,0, 0.87);
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
 }
 
-.card-stats .card-header {
-    float: left;
-    text-align: center;
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 }
 
+/* Card Header Refinements */
 .card .card-header {
-    padding: 15px 20px 0;
-    z-index: 3;
-	background-color:#fff!important;
-	border-bottom:none;
+    padding: 28px 32px;
+    background: linear-gradient(to right, #fcfcfc, #ffffff);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 20px 20px 0 0;
 }
 
-.card .card-footer .stats .material-icons {
+/* Modern Icon Styling */
+.icon {
+    width: 68px;
+    height: 68px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.icon-warning {
+    background: rgba(255, 152, 0, 0.12);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+}
+
+.icon-rose {
+    background: rgba(233, 30, 99, 0.12);
+    border: 1px solid rgba(233, 30, 99, 0.2);
+}
+
+.icon-success {
+    background: rgba(76, 175, 80, 0.12);
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.icon-info {
+    background: rgba(0, 188, 212, 0.12);
+    border: 1px solid rgba(0, 188, 212, 0.2);
+}
+
+/* Enhanced Card Content */
+.card .card-content {
+    padding: 32px;
     position: relative;
-    top: 4px;
-    font-size: 16px;
-}
-
-.card-stats .card-header span {
-    font-size: 36px;
-    line-height: 56px;
-    width: 56px;
-    height: 56px;
-}
-
-.icon.icon-warning {
-    color: #ff9800;
-}
-
-.icon.icon-rose {
-    color: #e91e63;
-}
-.icon.icon-success {
-    color: #4caf50;
-}
-.icon.icon-info {
-    color: #00bcd4;
-}
-.card .card-footer {
-    margin: 0 7px 0px;
-    padding-top: 10px;
-	background-color:#fff;
-    border-top: 1px solid #eeeeee;
-}
-
-.text-info {
-    color: #03A9F4!important;
 }
 
 .card-stats .card-content {
     text-align: right;
-    padding-top: 10px;
+    padding-top: 24px;
 }
 
-.card .card-content {
-    padding: 15px 20px;
-    position: relative;
+.category {
+    color: #666;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-family: 'Inter', sans-serif;
 }
 
-.card .card-content .category {
+.card-title {
+    color: #1a1a1a;
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin: 0 0 10px;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Refined Table Styling */
+.table {
     margin-bottom: 0;
-}
-.card .category:not([class*="text-"]) {
-    color: #555555;
-    font-size: 14px;
-    font-weight: 400;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
-.card .card-title:not(.card-calendar .card-title) {
-    margin-top: 0;
-    margin-bottom: 5px;
+.table thead th {
+    background: #f8f9fa;
+    padding: 20px 24px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.04);
 }
 
-.card-stats .card-title {
-    margin: 0;
+.table tbody td {
+    padding: 20px 24px;
+    vertical-align: middle;
+    color: #555;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    transition: background-color 0.2s ease;
 }
 
-.card .card-footer .stats {
-    line-height: 22px;
-    color: #555555;
-    font-size: 15px;
+.table tbody tr:hover td {
+    background-color: rgba(0, 0, 0, 0.02);
 }
 
-.card .card-footer div {
-    display: inline-block;
+/* Modern Button Styling */
+.btn {
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
 }
 
-.card .card-header-text h4{
-    margin-top: 0;
-    margin-bottom: 3px;
-	font-size:19px;
-    font-weight: 400;
-	color: #222222;
-    text-decoration: none;
-	
+.btn-primary {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
 }
 
-.table > thead > tr > th {
-    border-bottom-width: 1px;
+.btn-primary:hover {
+    background: linear-gradient(135deg, #357abd 0%, #2868a9 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.25);
+}
+
+/* Enhanced Form Controls */
+.form-control {
+    border-radius: 12px;
+    border: 2px solid #e8e8e8;
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background-color: #fcfcfc;
+}
+
+.form-control:focus {
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+}
+
+/* Modern Modal Styling */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    padding: 24px 32px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    background: linear-gradient(to right, #fcfcfc, #ffffff);
+}
+
+.modal-body {
+    padding: 32px;
+}
+
+.modal-footer {
+    padding: 24px 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    background: #fcfcfc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px 0;
+        border-radius: 12px;
+        width: 100%;
+    }
+
+    .card .card-header,
+    .card .card-content,
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 15px;
+    }
+
+    .icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .category {
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    .form-control {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .material-icons {
+        font-size: 20px;
+    }
+
+    .card .card-header-text h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Add an even smaller breakpoint for very small devices */
+@media (max-width: 480px) {
+    .card .card-header,
+    .card .card-content,
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding: 12px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
+
+/* Material Icons Styling */
+.material-icons {
+    font-size: 28px;
+}
+
+.icon-warning .material-icons {
+    color: #ff9800;
+}
+
+.icon-rose .material-icons {
+    color: #e91e63;
+}
+
+.icon-success .material-icons {
+    color: #4caf50;
+}
+
+.icon-info .material-icons {
+    color: #00bcd4;
+}
+
+/* Card Footer Styling */
+.card-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 15px 0 0 0;
+    background: transparent;
+}
+
+.card-footer .stats {
+    color: #777;
+    font-size: 13px;
+}
+
+.card-footer .stats i {
     font-size: 16px;
-    font-weight: 400;
+    margin-right: 5px;
+    position: relative;
+    top: 3px;
 }
 
+.card-footer a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
 
-.card .card-content {
-    padding: 15px 20px;
-    position: relative;
+.card-footer a:hover {
+    color: #000;
+}
+
+/* Modern Header Text */
+.card .card-header-text h4 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: -0.3px;
+}
+
+/* Refined Text Colors */
+.text-info {
+    color: #0288d1 !important;
+}
+
+.text-success {
+    color: #2e7d32 !important;
+}
+
+.text-warning {
+    color: #f57c00 !important;
+}
+
+.text-danger {
+    color: #d32f2f !important;
 }
 
 

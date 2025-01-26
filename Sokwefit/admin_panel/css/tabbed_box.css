@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-html * {
-  font-family: "Open Sans", sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
 
 .card {
   margin: 10px 0;
+  width: calc(100% - 20px);
 }
 
 .card {
@@ -25,81 +26,200 @@ html * {
   background: #fff;
 }
 
-
 #tabbed_box {
-  margin: 0px auto 0px 0px;
-  /* width: 650px; */
+  margin: 25px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+
 .tabbed_box h4 {
-  font-size: 18px;
-  color: #2f4f6f;
-  letter-spacing: -1px;
-  margin-bottom: 10px;
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 0 25px;
 }
 
 .tabbed_area {
-  border: 1px solid #494e52;
-  background-color: #fff;
-  padding: 8px;
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 ul.tabs {
-  margin: 0px;
-  padding: 0px;
-  margin-top: 5px;
-  margin-bottom: 6px;
+  display: flex;
+  gap: 10px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  padding-bottom: 10px;
 }
+
 ul.tabs li {
   list-style: none;
-  display: inline;
 }
+
 ul.tabs li a {
-  background-color: #1d2935;
-  color: #f1efeb;
-  padding: 8px 14px 8px 14px;
+  display: inline-block;
+  padding: 12px 24px;
   text-decoration: none;
-  font-size: 9px;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #505050;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
-  border: 1px solid #1d2935;
+  letter-spacing: 0.5px;
 }
+
 ul.tabs li a:hover {
-  background-color: #2f343a;
-  border-color: #2f343a;
+  background: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+  transform: translateY(-1px);
 }
+
 ul.tabs li a.active {
-  background-color: #ffffff;
-  color: #282e32;
-  border: 1px solid #464c54;
-  border-bottom: 1px solid #ffffff;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
 }
 
 .content {
   background-color: #ffffff;
-
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 300px;
 }
+
 #content_2,
 #content_3 {
   display: none;
-  height: auto;
-  clear: all;
 }
+
 #table_1 {
-  width: 200px;
-  height: auto;
-  clear: all;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate;
+  border-spacing: 0;
 }
-#viewer {
-  float: right;
-  width: 405px;
-  height: auto;
-  background-color: #ffffff;
+
+#table_1 th,
+#table_1 td {
+  padding: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
+#table_1 th {
+  background: rgba(0, 0, 0, 0.02);
+  font-weight: 600;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+#table_1 tr:last-child td {
+  border-bottom: none;
+}
+
+#table_1 tr:hover td {
+  background: rgba(52, 152, 219, 0.02);
+}
+
+#viewer,
 #viewer1 {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+#viewer {
+  width: calc(100% - 40px);
   float: right;
-  width: 390px;
-  height: auto;
-  background-color: #3399cc;
+}
+
+#viewer1 {
+  width: calc(100% - 40px);
+  float: right;
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .tabbed_area {
+    padding: 15px;
+  }
+
+  ul.tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  ul.tabs li a {
+    padding: 10px 16px;
+    font-size: 0.8rem;
+  }
+
+  #viewer,
+  #viewer1 {
+    width: 100%;
+    float: none;
+    margin-top: 15px;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+
+.status-pending {
+  background: rgba(255, 152, 0, 0.1);
+  color: #ff9800;
+}
+
+.status-inactive {
+  background: rgba(244, 67, 54, 0.1);
+  color: #f44336;
 }
 
 

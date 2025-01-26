@@ -1,29 +1,30 @@
 <section class="about" id="about">
 
-    <h3 class="sub-heading" data-aos="fade-up"> about us </h3>
-    <h1 class="heading" data-aos="fade-up"> why choose us? </h1>
+    <h3 class="sub-heading" data-aos="fade-up">About Us</h3>
+    <h1 class="heading" data-aos="fade-up">Why Choose Us?</h1>
 
     <div class="about-info">
         <div class="image" data-aos="fade-right">
-            <img src="images/about.png" alt="">
+            <img src="images/about.png" alt="About Sokwefitness">
         </div>
 
         <div class="content" data-aos="fade-left">
-        <h3>Empowering Fitness and Wellness</h3>
-        <p>At Sokwefitness, led by our visionary CEO Abuu JR, we are committed to helping you achieve your fitness and wellness goals. Our mission is to create an environment that inspires and supports a healthy lifestyle for everyone.</p>
-        <p>From state-of-the-art gym facilities to premium products like gym bags, pullovers, and accessories, we prioritize quality and functionality. We’re proud to offer solutions that enhance your workout experience and keep you motivated every step of the way.</p>
+            <h3>Transforming Lives Through Fitness</h3>
+            <p>At Sokwefitness, under the leadership of Abuu JR, we're more than just a fitness center - we're your partners in wellness. Our commitment goes beyond providing equipment; we create an ecosystem that nurtures your journey to a healthier lifestyle.</p>
+            <p>Experience excellence through our premium facilities and exclusive merchandise, carefully curated to elevate your fitness journey. Every product and service we offer reflects our dedication to quality and your success.</p>
+            
             <div class="icons-container">
                 <div class="icons">
                     <i class="fas fa-shipping-fast"></i>
-                    <span>fast delivery</span>
+                    <span>Swift Delivery</span>
                 </div>
                 <div class="icons">
                     <i class="fas fa-dollar-sign"></i>
-                    <span>easy payments</span>
+                    <span>Flexible Payments</span>
                 </div>
                 <div class="icons">
                     <i class="fas fa-headset"></i>
-                    <span>24/7 service</span>
+                    <span>24/7 Support</span>
                 </div>
             </div>
         </div>
@@ -33,17 +34,23 @@
     <h1 class="heading" data-aos="fade-up"> Happy Customers! </h1>
 
     <div class="row" id="gallery" data-aos="fade-up">
-        <div class="col-lg-8 m-auto">
-            <div class="customer-table-img-slider" id="icon">
+        <div class="col-lg-10 m-auto">
+            <div class="customer-table-img-slider swiper-container" id="icon">
                 <div class="swiper-wrapper">
-
-                <?php for($i=1; $i<8;$i++){ ?>
-                    <img src="./images/customers/c<?php echo $i ?>.jpg" data-fancybox="table-slider"
-                        class="customer-table-img swiper-slide"></img>  
-                <?php } ?>       
-                 
+                    <?php for($i=1; $i<8;$i++){ ?>
+                        <div class="swiper-slide">
+                            <img src="./images/customers/c<?php echo $i ?>.jpg" 
+                                 data-fancybox="table-slider"
+                                 class="customer-table-img">
+                        </div>
+                    <?php } ?>       
                 </div>
-        
+                
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
         </div>
@@ -93,3 +100,28 @@
 
 
 </section>
+
+<script>
+new Swiper('.customer-table-img-slider', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  }
+});
+</script>

@@ -70,30 +70,65 @@ include_once('../../includes/db_connect.php');
                 <div class="stars_container">
                     <div class="star_element">
                         <i class="fas fa-star submit_star mr-1" id="submit_star_1" data-rating="1"></i>
-                        <span> 1 star reviews</span>
+                        <span> 1 star approved reviews</span>
                     </div>
 
                     <div class="star_element">
                          <i class="fas fa-star submit_star mr-1" id="submit_star_2" data-rating="2"></i>
-                         <span> 2 star reviews </span>
+                         <span> 2 star approved reviews </span>
                         </div>
 
                     <div class="star_element">
                       <i class="fas fa-star submit_star mr-1" id="submit_star_3" data-rating="3"></i>
-                      <span> 3 star reviews </span>
+                      <span> 3 star approved reviews </span>
                     </div>
 
                     <div class="star_element">
                          <i class="fas fa-star submit_star mr-1" id="submit_star_4" data-rating="4"></i>
-                         <span> 4 star reviews </span>
+                         <span> 4 star approved reviews </span>
                     </div>
                     
                     <div class="star_element">
                          <i class="fas fa-star submit_star mr-1" id="submit_star_5" data-rating="5"></i>
-                         <span> 5 star reviews </span>
+                         <span> 5 star approved reviews </span>
                     </div>
                  
                 </div>
+                <hr />
+                
+                <div class="approved-reviews">
+            <h4>Reviews Approval Section</h4>
+    
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Review</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $query = "SELECT * FROM review_table WHERE approved = 0 ORDER BY datetime DESC";
+                    $result = mysqli_query($connection, $query);
+                    while($row = mysqli_fetch_assoc($result)) {
+                        echo "<tr>";
+                        echo "<td>" . htmlspecialchars($row['user_name']) . "</td>";
+                        echo "<td>" . $row['user_rating'] . " ★</td>";
+                        echo "<td>" . htmlspecialchars($row['user_review']) . "</td>";
+                        echo "<td>" . $row['datetime'] . "</td>";
+                        echo "<td>";
+                        echo "<button class='btn btn-success approve-btn' data-id='" . $row['review_id'] . "'>Approve</button> ";
+                        echo "<button class='btn btn-danger delete-btn' data-id='" . $row['review_id'] . "'>Delete</button>";
+                        echo "</td>";
+                        echo "</tr>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+        </div>
 
                 <hr />
                 <h4>Statistics & Reports</h4>
@@ -168,6 +203,7 @@ include_once('../../includes/db_connect.php');
                     <input type="hidden" id="hidden-stars" value=<?php echo $star_array; ?> />
                     <input type="hidden" id="hidden-average" value=<?php echo $average_rating_month_array; ?> />
                     
+                   
                     <div class="container1">
                         <div> 
                             <canvas id="myChart" style="width:40vw; "></canvas>
@@ -181,36 +217,17 @@ include_once('../../includes/db_connect.php');
                         </button>
 
                     </div>
-
+                    
                     <div style="position:relative; width:40vw; "> 
                         <canvas id="myChart2" ></canvas>
                     </div>
-
+                    `
                 </div>
-
-                <!-- <h4>Unapproved Reviews</h4>
-                <hr />
-                <div class="unapproved-reviews">
-                    <?php
-                        // Fetch unapproved reviews from the database
-                        $query = "SELECT * FROM review_table WHERE approved = 0;";
-                        $result = mysqli_query($connection, $query);
-
-                        while($row = mysqli_fetch_assoc($result)) {
-                            echo "<div class='review'>";
-                            echo "<p>" . htmlspecialchars($row['user_review']) . "</p>";
-                            echo "<button class='approve-btn' data-id='" . $row['review_id'] . "'>Approve</button>";
-                            echo "<button class='unapprove-btn' data-id='" . $row['review_id'] . "'>Unapprove</button>";
-                            echo "</div>";
-                        }
-                    ?>
-                </div> -->
-
                 
 
 
-			</div>
-		</div>
+            </div>
+        </div>
 </div>
 
 
@@ -240,7 +257,39 @@ include_once('../../includes/db_connect.php');
 											<div class="panel panel-default">
 												<div class="panel-body">
 		
-                                                    <div class="review"> </div>
+                                                    <div class="review"> 
+                                                        <table class="table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Name</th>
+                                                                    <th>Rating</th>
+                                                                    <th>Review</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                    <th>Actions</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <?php
+                                                                $query = "SELECT * FROM review_table WHERE approved = 0 ORDER BY datetime DESC";
+                                                                $result = mysqli_query($connection, $query);
+                                                                while($row = mysqli_fetch_assoc($result)) {
+                                                                    echo "<tr>";
+                                                                    echo "<td>" . htmlspecialchars($row['user_name']) . "</td>";
+                                                                    echo "<td>" . $row['user_rating'] . " ★</td>";
+                                                                    echo "<td>" . htmlspecialchars($row['user_review']) . "</td>";
+                                                                    echo "<td>" . $row['datetime'] . "</td>";
+                                                                    echo "<td>" . ($row['approved'] ? 'Approved' : 'Pending') . "</td>";
+                                                                    echo "<td>";
+                                                                    echo "<button class='btn btn-success approve-btn' data-id='" . $row['review_id'] . "'>Approve</button> ";
+                                                                    echo "<button class='btn btn-danger delete-btn' data-id='" . $row['review_id'] . "'>Delete</button>";
+                                                                    echo "</td>";
+                                                                    echo "</tr>";
+                                                                }
+                                                                ?>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
                  	
 												</div>
 											</div>
@@ -334,42 +383,88 @@ include_once('../../includes/db_connect.php');
 
 <script src="../js/script.js" type="text/javascript"></script>
 <script src="../js/charts.js" type="text/javascript"></script>
-<!-- 
-<script>
-    $(document).on('click', '.approve-btn', function() {
-        var reviewId = $(this).data('id');
-        $.ajax({
-            url: 'approve_review.php', // Create this file to handle approval
-            type: 'POST',
-            data: { id: reviewId, action: 'approve' },
-            success: function(response) {
-                if (response.success) {
-                    alert('Review approved successfully!');
-                    location.reload(); // Reload the page to see changes
-                } else {
-                    alert('Error approving review.');
-                }
-            }
-        });
-    });
 
-    $(document).on('click', '.unapprove-btn', function() {
-        var reviewId = $(this).data('id');
-        $.ajax({
-            url: 'approve_review.php', // Use the same file to handle unapproval
-            type: 'POST',
-            data: { id: reviewId, action: 'unapprove' },
-            success: function(response) {
-                if (response.success) {
-                    alert('Review unapproved successfully!');
-                    location.reload(); // Reload the page to see changes
-                } else {
-                    alert('Error unapproving review.');
+<script>
+    $(document).ready(function() {
+        // Approve review
+        $(document).on('click', '.approve-btn', function() {
+            var reviewId = $(this).data('id');
+            $.ajax({
+                url: 'approve_review.php',
+                type: 'POST',
+                data: { id: reviewId, action: 'approve' },
+                dataType: 'json',  // Specify that we expect JSON response
+                success: function(response) {
+                    if (response.success) {
+                        Swal.fire('Success', 'Review approved successfully!', 'success')
+                        .then(() => location.reload());
+                    } else {
+                        Swal.fire('Error', response.message || 'Error approving review.', 'error');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    Swal.fire('Error', 'Server error occurred. Please try again.', 'error');
                 }
-            }
+            });
+        });
+
+        // Unapprove review
+        $(document).on('click', '.unapprove-btn', function() {
+            var reviewId = $(this).data('id');
+            $.ajax({
+                url: 'approve_review.php',
+                type: 'POST',
+                data: { id: reviewId, action: 'unapprove' },
+                dataType: 'json',  // Specify that we expect JSON response
+                success: function(response) {
+                    if (response.success) {
+                        Swal.fire('Success', 'Review unapproved successfully!', 'success')
+                        .then(() => location.reload());
+                    } else {
+                        Swal.fire('Error', response.message || 'Error unapproving review.', 'error');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    Swal.fire('Error', 'Server error occurred. Please try again.', 'error');
+                }
+            });
+        });
+
+        // Delete review
+        $(document).on('click', '.delete-btn', function() {
+            var reviewId = $(this).data('id');
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: 'approve_review.php',
+                        type: 'POST',
+                        data: { id: reviewId, action: 'delete' },
+                        dataType: 'json',  // Specify that we expect JSON response
+                        success: function(response) {
+                            if (response.success) {
+                                Swal.fire('Deleted!', 'Review has been deleted.', 'success')
+                                .then(() => location.reload());
+                            } else {
+                                Swal.fire('Error', response.message || 'Error deleting review.', 'error');
+                            }
+                        },
+                        error: function(xhr, status, error) {
+                            Swal.fire('Error', 'Server error occurred. Please try again.', 'error');
+                        }
+                    });
+                }
+            });
         });
     });
-</script> -->
+</script>
   
 
 </body>

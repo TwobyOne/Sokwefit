@@ -54,9 +54,7 @@
                     <a href="admin_team.php"><i class="material-icons">people</i><span>Team Members</span></a>
                 </li>
 
-                <li  class="">
-                    <a href="view_reviews.php"><i class="material-icons">reviews</i><span>Reviews</span></a>
-                </li>
+               
 
                 
 			
