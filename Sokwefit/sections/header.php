@@ -7,7 +7,9 @@
     #################################################################################################-->
 
 <header>
-   <a href="#" class="logo">Sokwefitness</a>
+   <a href="#" class="logo">
+    <img src="images/log.svg" alt="logo">
+    Sokwefitness</a>
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
