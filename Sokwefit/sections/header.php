@@ -9,7 +9,8 @@
 <header>
    <a href="#" class="logo">
     <img src="images/log.svg" alt="logo">
-    Sokwefitness</a>
+    SOKWEFITNESS</a>
+
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
