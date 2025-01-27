@@ -30,11 +30,8 @@
         </div>
     </div>
 
- 
+
                 
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
                 
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
@@ -87,27 +84,4 @@
 
 </section>
 
-<script>
-new Swiper('.customer-table-img-slider', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: true,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  }
-});
-</script>
+
