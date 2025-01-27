@@ -7,11 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/log.svg" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
-    <title>Sokwefitness</title>
+    <title>Sokwefitness - Your Ultimate Fitness Destination</title>
+
+    <meta name="description" content="Sokwefitness offers a variety of fitness services and products to help you achieve your health goals. Join us for personalized training and nutrition plans.">
+    <link rel="canonical" href="https://www.yourwebsite.com/">
+
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Sokwefitness - Your Ultimate Fitness Destination">
+    <meta property="og:description" content="Join Sokwefitness for personalized training and nutrition plans.">
+    <meta property="og:image" content="https://www.yourwebsite.com/images/log.svg">
+    <meta property="og:url" content="https://www.yourwebsite.com/">
 
     <!-- swiper css file -->
     <link rel="stylesheet" href="./plugins/swiper-8.0.7/css/swiper.min.css">
-
 
     <!-- font awesome css cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,8 +29,6 @@
 
     <!-- aos css file -->
     <link rel="stylesheet" href="./plugins/aos-2.3.4/css/aos.css">
-
-
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -36,7 +42,6 @@
     <link rel="stylesheet" href="./css/review.css">
     <link rel="stylesheet" href="./css/order.css">
 
-   
 </head>
 <body>
 
@@ -55,52 +60,40 @@
      all requests are sent to php scripts -> under FOLDER: 'scripts'.
      ###################################################################################### -->
 
+<!-- Main content starts here -->
+<h1>Welcome to Sokwefitness</h1>
+<p>Your journey to fitness starts here. Explore our services and products!</p>
 
 <!-- Database connection -->
 <?php include_once('./includes/db_connect.php'); ?>    
 
-    
 <!-- header section -->
 <?php include('./sections/header.php'); ?> 
-
 
 <!-- home section  -->
 <?php include('./sections/home.php'); ?> 
 
-
 <!-- offers section  -->
 <?php include('./sections/offer.php'); ?> 
-
 
 <!-- about section  -->
 <?php include('./sections/about.php'); ?> 
 
-
-
 <!-- menu section  -->
 <?php include('./sections/menu.php'); ?> 
-
 
 <!-- PopUp toppings modal section  -->
 <?php include('./sections/toppings_modal.php'); ?> 
 
-
 <!-- extras section  -->
-
-
 
 <!-- review section  -->
 <?php include('./sections/review.php'); ?> 
 
-
 <!-- footer section  -->
 <?php include('./sections/footer.php'); ?> 
 
-
-
 <!-- loader part  -->
-
-
 
 <!-- jquery js file  -->
 <script src="./plugins/jquery-3.6.0/jquery.min.js"></script>
@@ -117,7 +110,6 @@
 <!-- sweetalert2 js file -->
 <script src="./plugins/sweetalert2/sweetalert2.js"></script>
  
-    
 <script src="js/script.js"></script>
 <script src="js/currency.js"></script>
 <script src="js/addToCart.js"></script>
