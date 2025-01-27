@@ -67,7 +67,9 @@
     color: var(--black);
   }
 
-
+.team-box p{
+  color: var(--black)
+}
   /***************** customers ******************/
 
  #gallery{
