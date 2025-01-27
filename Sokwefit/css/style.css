@@ -139,7 +139,7 @@ section:nth-child(even) {
   color: var(--light-color);
 }
 
-.footer .box-container .box a {
+.footer .box-container .box a,p {
   display: block;
   padding: 0.5rem 0;
   font-size: 1.5rem;

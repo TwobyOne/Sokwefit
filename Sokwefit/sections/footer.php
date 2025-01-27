@@ -16,16 +16,17 @@
 
         <div class="box">
             <h3>contact info</h3>
-            <a href="#">+255 743 536 373</a>
-            <a href="#">+255 656 722 784</a>
-            <a href="#">info@sokwefit.com</a>
+            <p>+255 743 536 373</p>
+            <p>+255 656 722 784</p>
+            <p>info@sokwefit.com</p>
+           
         </div>
 
         <div class="box">
             <h3>follow me</h3>
             <a href="#">facebook</a>
             <a href="#">twitter</a>
-            <a href="#">instagram</a>
+            <a href="https://www.instagram.com/sokwefitness/">instagram</a>
         </div>
 
     </div>
