@@ -5,7 +5,25 @@
                     <button type="button" id="sidebarCollapse" class="d-xl-block d-lg-block d-md-mone d-none">
                         <span class="material-icons">arrow_back_ios</span>
                     </button>
-					
+		<!-- Js code for return to prvious top-navbar -->
+			
+        <script>
+    document.getElementById('sidebarCollapse').addEventListener('click', function () {
+        // Get the previous page's URL
+        const previousPage = document.referrer;
+
+        // Check if the previous page is NOT the login page 
+        if (previousPage && !previousPage.includes('/admin_panel/index.php')) {
+            // Navigate back only if the previous page is not the login page
+            window.history.back();
+        } else {
+            // If there's no valid previous page or it's the login page, do nothing
+            console.log('Cannot navigate back to the login page.');
+        }
+    });
+</script>
+
+
 					<a class="navbar-brand" href="#"> <?php echo $section ?> </a>
 					
                     <button class="d-inline-block d-lg-none ml-auto more-button" type="button" data-toggle="collapse"

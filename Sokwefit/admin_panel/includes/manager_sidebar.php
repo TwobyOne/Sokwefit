@@ -43,7 +43,7 @@
                 </div>
 
                 <li class="">
-                    <a href="manager_menu.php"><i class="material-icons">menu_book</i><span>ProductCategories</span></a>
+                    <a href="manager_menu.php"><i class="material-icons">menu_book</i><span>Product Categories</span></a>
                 </li>
 
                 <li class="">

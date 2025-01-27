@@ -4,9 +4,10 @@
 
         <div class="box">
             <h3>Our Products</h3>
-            <a href="#">Dumb Bell</a>
+            <a href="#">Gym Towel</a>
             <a href="#">Pullover</a>
-            <a href="#">T-shirts</a>
+            <a href="#">Sockd</a>
+            <a href="#">Vest</a>
             <a href="#">Mugs</a>
             <a href="#">Bags</a>
         </div>

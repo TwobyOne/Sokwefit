@@ -1,5 +1,5 @@
 <section class="menu" id="menu">
-    <h3 class="sub-heading" data-aos="fade-up"> our menu </h3>
+    <h3 class="sub-heading" data-aos="fade-up"> our products </h3>
     <h1 class="heading" data-aos="fade-up"> today's speciality </h1>
   
     <div class="menu-tabs" data-aos="fade-up">

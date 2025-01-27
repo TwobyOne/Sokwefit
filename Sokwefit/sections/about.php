@@ -66,7 +66,7 @@
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/_al.farsy.m?igsh=YmF2cDRhYTJjMWtv&utm_source=qr"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
