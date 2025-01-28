@@ -139,12 +139,12 @@ section:nth-child(even) {
   color: var(--light-color);
 }
 
-.footer .box-container .box a {
+.footer .box-container .box a,p {
   display: block;
   padding: 0.5rem 0;
   font-size: 1.5rem;
   text-align: center;
-  color: var(--light-color);
+  color: var(--black);
 }
 
 .footer .box-container .box a:hover {
@@ -165,30 +165,6 @@ section:nth-child(even) {
 .footer .credit span {
   color: var(--light-color);
 }
-
-/************************ Loading *************************/
-/* .loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.loader-container img {
-  width: 35rem;
-}
-
-.loader-container.fade-out {
-  top: -110%;
-  opacity: 0;
-}*/
 
 a {
   text-decoration: none;
