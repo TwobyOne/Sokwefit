@@ -43,13 +43,14 @@ header {
     font-size: 1.7rem;
     border-radius: 0.5rem;
     padding: 0.5rem 1.5rem;
+    margin: 0.2rem;
     color: var(--light-color);
   }
   
   header .navbar a.active,
   header .navbar a:hover {
     color: #000;
-    background: var(--orange);
+    background: var(--light-color);
   }
 
   header .icons select{
