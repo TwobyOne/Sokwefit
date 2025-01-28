@@ -15,7 +15,7 @@
 </style>
 
 <header>
-   <a href="#" class="logo">
+   <a href="" class="logo">
     <img src="images/log.svg" alt="logo">
     SOKWEFITNESS</a>
 
