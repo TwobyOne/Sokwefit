@@ -24,7 +24,7 @@
 
         <div class="box">
             <h3>follow me</h3>
-            <a href="#">facebook</a>
+            <a href="https://www.facebook.com/people/SOKWE-Fitness/61566860461102/">facebook</a>
             <a href="#">twitter</a>
             <a href="https://www.instagram.com/sokwefitness/">instagram</a>
         </div>

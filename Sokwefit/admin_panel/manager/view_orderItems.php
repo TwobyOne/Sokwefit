@@ -92,8 +92,6 @@ include_once('../../includes/db_connect.php');
 														<th>name</th> 
 														<th>price</th>
 														<th>quantity</th>
-														<th>toppings</th>
-														<th>toppings price</th> 
 														<th>total </th> 
 														<th>currency</th>
 													</tr>
@@ -116,19 +114,7 @@ include_once('../../includes/db_connect.php');
 																<td><?php echo $row2['item_price']; ?></td>
                                                                 <td><?php echo $row['item_quantity']; ?></td>
 
-																<td>
-																<?php 
-
-																	$query3="SELECT topping_image From toppings,extra_toppings where toppings.topping_name = extra_toppings.topping_name and order_item_id =".$row['order_item_id'];
-																	$result3= mysqli_query($connection,$query3);
-																	while($row3=mysqli_fetch_assoc($result3)){?>
-
-																<img src="../../<?php echo $row3['topping_image']; ?>" class="img_toppings" >
-
-																<?php } ?>
-
-																</td>
-                                                                <td><?php echo $row['toppings_price']?></td>
+																
                                                                 <td><?php echo $row['item_total']; ?></td>
 																<td><?php echo $row['order_currency'] ?></td>
 
