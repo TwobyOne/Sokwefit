@@ -74,7 +74,7 @@
 <?php include('./sections/home.php'); ?> 
 
 <!-- offers section  -->
-<?php include('./sections/offer.php'); ?> 
+<?php //include('./sections/offer.php'); ?> 
 
 <!-- about section  -->
 <?php include('./sections/about.php'); ?> 
