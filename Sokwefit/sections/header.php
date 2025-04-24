@@ -56,7 +56,7 @@
         $result=mysqli_query($connection,$query);  
     ?>
 
-            <select id="currency_list">
+            <!--<select id="currency_list">
            
                 <?php while($row=mysqli_fetch_assoc($result)){   
                     
@@ -67,7 +67,7 @@
 
                 } ?>  
             
-            </select>
+            </select>-->
                 
 
 
