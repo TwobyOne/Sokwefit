@@ -5,7 +5,7 @@
 
     <div class="about-info">
         <div class="image" data-aos="fade-right">
-            <img src="images/about.png" alt="About Sokwefitness">
+            <img src="images/AbuOffice-min.png" alt="About Sokwefitness" class="styled-image">
         </div>
 
         <div class="content" data-aos="fade-left">

@@ -70,8 +70,16 @@
             </select>
                 
 
-            <a href="./wishlist.php" class="fas fa-heart"></a>
-            <a href="./cart.php" class="fas fa-shopping-cart"></a>
+
+           <!-- Social Media Icons -->
+        <!-- Will hide on screens smaller than md (mobile) -->
+        <a href="https://www.facebook.com/people/SOKWE-Fitness/61566860461102/" class="fab fa-facebook social-icon" target="_blank"></a>
+        <a href="https://www.instagram.com/sokwefitness/" class="fab fa-instagram social-icon" target="_blank"></a>
+        <a href="https://www.youtube.com/@abuujr87/featured" class="fab fa-youtube social-icon" target="_blank"></a>
+
+
+            <!--<a href="./wishlist.php" class="fas fa-heart"></a>
+            <a href="./cart.php" class="fas fa-shopping-cart"></a>-->
         
             <i class="fas fa-bars" id="menu-bars"></i>
     </div>

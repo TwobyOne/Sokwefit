@@ -23,9 +23,16 @@
 
         <div class="box">
             <h3>follow me</h3>
-            <a href="https://www.facebook.com/people/SOKWE-Fitness/61566860461102/">facebook</a>
-            <a href="https://www.instagram.com/sokwefitness/">instagram</a>
-            <a href="https://www.youtube.com/@abuujr87/featured">YouTube</a>
+            <a href="https://www.facebook.com/people/SOKWE-Fitness/61566860461102/" target="_blank">
+                   <i class="fab fa-facebook"></i> Facebook
+             </a>
+                <a href="https://www.instagram.com/sokwefitness/" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="https://www.youtube.com/@abuujr87/featured" target="_blank">
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+
         </div>
 
     </div>

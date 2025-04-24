@@ -17,7 +17,7 @@
 :root {
   --green: #27ae60;
   --light-green:  rgb(106, 230, 106);
-  --black: #192a56;
+  --black: #09090a;
   --orange: #ffb674;
   --dark-orange: #fc8d67;
   --light-orange: #fec5b1;
@@ -28,7 +28,7 @@
   --light-pink: #ffb3e4;
   --brown: #564519;
   --pink: #ff7497;
-  --light-color: #fff;
+  --light-color: #ffffff;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
@@ -80,7 +80,7 @@ section.footer{
 }
 
 section:nth-child(even) {
-  background: #eee;
+  background: #080808;
 }
 
 /**********************************************/
@@ -199,4 +199,30 @@ a {
     font-size: 50%;
   }
 
+}
+
+a {
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 18px;
+  color: #000;
+}
+
+a i {
+  margin-right: 5px;
+}
+
+
+
+.social-icon {
+  font-size: 20px;
+  color: #000;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .social-icon {
+    display: none;
+  }
 }

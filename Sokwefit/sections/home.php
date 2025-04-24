@@ -12,7 +12,7 @@
                     <a href="#menu" class="btn">Shop now</a>
                 </div>
                 <div class="image" >
-                    <img src="images/mugs.png" alt="">
+                    <img src="images/AbuOffice-min.png" alt="About Sokwefitness" class="styled-image">
                 </div>
             </div>
 
@@ -26,7 +26,7 @@
             </div>
                 
                 <div class="image">
-                    <img src="images/pullover.png" alt="">
+                    <img src="images/AbuOffice-min.png" alt="About Sokwefitness" class="styled-image">
                 </div>
             </div>
 
@@ -38,7 +38,20 @@
                     <a href="#menu" class="btn">Shop now</a>
                 </div>
                 <div class="image">
-                    <img src="images/bags.png" alt="">
+                    <img src="images/AbuOffice-min.png" alt="About Sokwefitness" class="styled-image">
+                </div>
+            </div>
+
+            
+            <div class="swiper-slide slide">
+                <div class="content">
+                <span>Carry your essentials in style</span>
+                    <h3>Abuu Sokwefitness</h3>
+                    <p>Explore our range of high-quality gym bags designed to keep your gear organized and ready for every workout!</p>
+                    <a href="#menu" class="btn">Shop now</a>
+                </div>
+                <div class="image">
+                    <img src="images/AbuOffice-min.png" alt="About Sokwefitness" class="styled-image">
                 </div>
             </div>
         </div>
