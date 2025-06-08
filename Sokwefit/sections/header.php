@@ -22,10 +22,10 @@
 
     <nav class="navbar">
         <a class="active" href="#home">home</a>
-        <a href="#Merchandise">Merchandise</a>
         <a href="#about">about</a>
+        <a href="#merchandise">Merchandise</a>
         <a href="#menu">menu</a>
-        <a href="#E-Books">E-Books</a>
+        <a href="#ebooks">E-Books</a>
         <a href="#review">reviews</a>
     </nav>
 

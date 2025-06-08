@@ -25,14 +25,14 @@
   }
   
   .about .about-info .content h3 {
-    color: var(--light-color);
+    color: var(--black);
     font-size: 4rem;
     padding: 0.5rem 0;
   }
   
   .about .about-info .content p {
-    color: var(--light-color);
-    font-size: 1.5rem;
+    color: var(--black);
+    font-size: 2rem;
     padding: 0.5rem 0;
     line-height: 2;
   }
@@ -59,7 +59,7 @@
   
   .about .about-info .content .icons-container .icons i {
     font-size: 2.5rem;
-    color: var(--pink);
+    color: #FFC94A;
   }
   
   .about .about-info .content .icons-container .icons span {
@@ -153,81 +153,7 @@
   background: var(--pink);
   border-radius: 5px;
 }
-
-/* New */
-
-
-/***************** Team ******************/
-
-.team-slider {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 3em;
-  height:420px;
-}
-
-.team-box {
-  height: 380px;
-  padding: 1.5em;
-  border-radius: 30px;
-  background: linear-gradient(145deg, #ececec, #ffffff);
-
-  transition: 0.8s cubic-bezier(0.22, 0.78, 0.45, 1.02);
-}
-
-.team-img {
-  width: 100%;
-  height: 200px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 9px 9px 18px rgb(194 194 194 /0.5), -9px -9px 18px rgb(255 255 255 / 0.5);
-  background-position: center;
-  background-size: cover;
-}
-
-.team-box .h3-title {
-  text-transform: capitalize;
-  color: #0d0d25;
-  font-weight: 600;
-}
-
-.team-slider .social-icon {
-  margin: 15px 0px 10px;
-}
-
-.team-slider .social-icon ul li {
-  display: inline-block;
-  margin: 0 6px;
-}
-
-.team-slider .social-icon ul li:last-child {
-  margin-right: 0;
-}
-
-.team-slider .social-icon ul li:first-child {
-  margin-left: 0;
-}
-
-.team-slider .social-icon ul li a {
-  width: 50px;
-  height: 50px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 4px 4px 8px #d0d0d0, -4px -4px 8px #ffffff;
-  color: #0d0d25;
-  font-size: 2rem;
-}
-
-/*.team-slider .social-icon ul li a:hover {
-  background: #ff8243;
-}
-
-.team-slider .social-icon ul li a:hover i {
-  color: #ffffff !important;
-} */ 
+ 
 
 @media (max-width: 510px) {
   .team-slider {

@@ -1,8 +1,10 @@
 /************************ Menu  ***********************/
 
 .menu {
+  background-color: #FFC94A;
   display: flex;
   flex-direction: column;
+  
 }
 
 .menu .menu-options {
@@ -60,7 +62,7 @@
 
 .menu .box-container .box {
   padding:1.5rem;
-  background: #fff;
+  background: #ffc43a;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
@@ -141,7 +143,7 @@
 }
 
 .menu .box-container .box .content .price {
-  color: var(--dark-orange);
+  color: #FCEFCB;
   font-size: 2.5rem;
   font-weight: bold;
  
@@ -198,10 +200,6 @@
   text-align: center;
   border-radius: 20px;
 }
-
-
-
-
 
 @media (max-width: 750px) {
   .menu .box-container {

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./plugins/swiper-8.0.7/css/swiper.min.css">
 
     <!-- font awesome css cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- bootstrap css file -->
     <link rel="stylesheet" href="./plugins/bootstrap-5.1.3/css/bootstrap.min.css">
@@ -41,6 +41,10 @@
     <link rel="stylesheet" href="./css/extra.css">
     <link rel="stylesheet" href="./css/review.css">
     <link rel="stylesheet" href="./css/order.css">
+    <link rel="stylesheet" href="./css/merchandise.css">
+    <link rel="stylesheet" href="./css/ebooks.css">
+    <link rel="stylesheet" href="assets/css/merchandise.css">
+    
 
 </head>
 <body>
@@ -61,7 +65,7 @@
      ###################################################################################### -->
 
 <!-- Main content starts here -->
-<h1>Welcome to Sokwefitness</h1>
+<!--<h1>Welcome to Sokwefitness</h1>-->
 <p>Your journey to fitness starts here. Explore our services and products!</p>
 
 <!-- Database connection -->
@@ -79,13 +83,17 @@
 <!-- about section  -->
 <?php include('./sections/about.php'); ?> 
 
-<!-- menu section  -->
-<?php include('./sections/menu.php'); ?> 
+<!-- Merchandise -->
+ <?php include('./sections/merchandise.php'); ?>
 
 <!-- PopUp toppings modal section  -->
-<?php include('./sections/toppings_modal.php'); ?> 
+<?php //include('./sections/toppings_modal.php'); ?> 
 
-<!-- extras section  -->
+<!-- menu section  -->
+<?php include('./sections/menu.php'); ?>
+
+<!-- E-Books section -->
+<?php include('./sections/ebooks.php'); ?>
 
 <!-- review section  -->
 <?php include('./sections/review.php'); ?> 
@@ -115,6 +123,8 @@
 <script src="js/addToCart.js"></script>
 <script src="js/wishlist.js"></script>
 <script src="js/reviews.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

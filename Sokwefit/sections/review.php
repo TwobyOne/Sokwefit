@@ -1,6 +1,6 @@
 <section class="review" id="review">
 
-    <h3 class="sub-heading" data-aos="fade-up"> customer's review </h3>
+    <h3 class="sub-heading" data-aos="fade-up"> Rate Us </h3>
     <h1 class="heading" data-aos="fade-up"> what they say </h1>
 
 

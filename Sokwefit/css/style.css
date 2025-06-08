@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'DancingScript';
   src: url('../fonts/DancingScript-Regular.ttf') format('truetype');
@@ -41,7 +40,7 @@
   outline:none;
   border: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
   
 }
 
@@ -74,13 +73,15 @@ section {
   
 }
 section.footer{
-  background-color: #011720;
-  border-radius: 5rem;
-  margin: 3rem;
+  background-color: #000000;
+  margin: 0;
+  padding: 2rem 9%;
+  width: 100%;
+  border-radius: 0;
 }
 
 section:nth-child(even) {
-  background: #080808;
+  background: #fffdfd;
 }
 
 /**********************************************/
@@ -226,3 +227,121 @@ a i {
     display: none;
   }
 }
+
+/* E-Books Section Styles */
+.ebooks {
+    padding: 5rem 9%;
+    background: #f7f7f7;
+}
+
+.ebooks .heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.ebooks .heading span {
+    color: var(--main-color);
+}
+
+.ebooks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.ebook-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.ebook-card:hover {
+    transform: translateY(-5px);
+}
+
+.ebook-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.ebook-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.ebook-card:hover .ebook-image img {
+    transform: scale(1.1);
+}
+
+.ebook-content {
+    padding: 2rem;
+}
+
+.ebook-content h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.ebook-content p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.ebook-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.ebook-details .price {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.ebook-details .pages {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.ebook-card .btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.ebook-card .btn:hover {
+    background: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .ebooks {
+        padding: 3rem 5%;
+    }
+    
+    .ebooks .heading {
+        font-size: 2.5rem;
+    }
+    
+    .ebooks-container {
+        grid-template-columns: 1fr;
+    }
+}
+
