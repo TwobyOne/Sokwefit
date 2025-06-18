@@ -1,6 +1,6 @@
 <section class="order" id="order">
 
-    <h3 class="sub-heading"> order now </h3>
+   <!-- <h3 class="sub-heading"> order now </h3>
     <h1 class="heading"> free and fast </h1>
 
     <form action="">
@@ -48,6 +48,6 @@
 
         <input type="submit" value="order now" class="btn">
 
-    </form>
+    </form>-->
 
 </section>
